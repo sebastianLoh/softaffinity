@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('index','nuevo_controlador@index');
+
+
+/*
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,4 +23,8 @@ Route::get('/hola{nombre}', function ($nombre) {
     return 'Hola Mundo! Como andas '. $nombre .' ?';
 });
 
-Route::get('index','nuevo_controlador@index');
+
+Route::get('home', function () {
+    return view('home');
+});*/
+
