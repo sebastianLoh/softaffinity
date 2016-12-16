@@ -7,10 +7,13 @@ use Illuminate\Http\Request;
 class nuevo_controlador extends Controller
 {
     
-	public function index ()
+	public function login ()
 		{
-			//return 'Cargando metodo index';
-			return view('home');
+			$placeholder_u = "Ingrese el usuario";
+			$placeholder_p = "Ingrese su Contraseña";
+			$data = ['usuario' => $placeholder_u, 'pass' => $placeholder_p];
+
+			return view('login', $data );
 		}
 
 }

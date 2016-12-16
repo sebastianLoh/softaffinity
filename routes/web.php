@@ -11,13 +11,13 @@
 |
 */
 
-Route::get('index','nuevo_controlador@index');
-
+Route::get('login','nuevo_controlador@login');
 
 /*
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
 
 Route::get('/hola{nombre}', function ($nombre) {
     return 'Hola Mundo! Como andas '. $nombre .' ?';
